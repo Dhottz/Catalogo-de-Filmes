@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo de Filmes</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <h1 style="color: white; text-align: center;">Galeria da Sétima Arte</h1>
+
+    <nav>
+        <input type="text" id="searchInput" placeholder="Pesquisar filme...">
+        <button id="sm-button">Pesquisar</button>
+    </nav>
+
+    <div id="movies"></div>
+
+    <button id="nextPage" style="display: none; margin: 20px auto; display: block;">Próxima Página</button>
+
+    <!-- Modal -->
+    <div id="movieModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="movieTitle"></h2>
+            <img id="moviePoster" src="" alt="Poster do filme" width="200">
+            <p><strong>Data de Lançamento:</strong> <span id="movieReleaseDate"></span></p>
+            <p><strong>Nota:</strong> <span id="movieVoteAverage"></span></p>
+            <p id="movieOverview"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
